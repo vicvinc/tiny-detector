@@ -1,6 +1,6 @@
 {
   "name": "tiny-dector",
-  "version": "0.0.3",
+  "version": "0.0.32",
   "description": "a tiny browser detector",
   "main": "./src/index.js",
   "scripts": {
@@ -28,9 +28,6 @@
     "webpack": "^4.22.0",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
-  },
-  "dependencies": {
-    "global": "^4.3.2"
   },
   "repository": "https://github.com/vicvinc/tiny-dector.git"
 }
