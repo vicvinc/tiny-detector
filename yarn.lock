@@ -5063,6 +5063,13 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+tiny-dector@^0.0.2:
+  version "0.0.2"
+  resolved "http://registry.npm.taobao.org/tiny-dector/download/tiny-dector-0.0.2.tgz#46220efd70889324e854f0c402c313eca335ec51"
+  integrity sha1-RiIO/XCIkyToVPDEAsMT7KM17FE=
+  dependencies:
+    global "^4.3.2"
+
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/to-arraybuffer/download/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
