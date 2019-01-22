@@ -1,14 +1,14 @@
 {
   "name": "tiny-dector",
   "version": "0.0.3",
-  "description": "a tiny mobile browser dector",
+  "description": "a tiny browser detector",
   "main": "./src/index.js",
   "scripts": {
     "dev": "webpack-dev-server",
     "test": "npm run test"
   },
   "keywords": [
-    "browser-dector"
+    "browser-detector"
   ],
   "author": "h5-sina-blog",
   "license": "MIT",

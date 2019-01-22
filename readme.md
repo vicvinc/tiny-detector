@@ -1,4 +1,4 @@
-# simple and tiny browser dector
+# simple and tiny browser detector
 
 ```javascript
 import Dector from "tiny-dector";
@@ -35,3 +35,5 @@ Mobile:
   "version": "11.0"
 }
 ```
+
+ps: dector is short for detector.. its confused but, next time will be change
