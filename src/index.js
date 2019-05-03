@@ -1,36 +1,36 @@
 import {
   ua,
   browserInfo,
-  platformDect,
-  browserDect,
+  platformDetector,
+  browserDetector,
   browserNames
 } from "./utils";
 
-export default class Dector {
+export default class Detector {
   constructor() {
     this.device = "PC";
     for (let item in browserInfo) {
       for (let i = 0; i < browserInfo[item].length; i++) {
         const value = browserInfo[item][i];
-        if (value && browserDect[value]) {
+        if (value && browserDetector[value]) {
           this[item] = value;
         }
       }
     }
 
-    // dect os version
+    // detect os version
     this.osVersion = "";
-    platformDect[this.os] &&
-      ((this.osVersion = platformDect[this.os]()),
+    platformDetector[this.os] &&
+      ((this.osVersion = platformDetector[this.os]()),
       this.osVersion === ua && (this.osVersion = ""));
 
-    // dect browser version
+    // detect browser version
     this.version = "";
     browserNames[this.browser] &&
       ((this.version = browserNames[this.browser]()),
       this.version === ua && (this.version = ""));
 
-    // dect browser engine
+    // detect browser engine
     this.browser === "Edge"
       ? (this.engine = "EdgeHTML")
       : this.browser === "Chrome" && parseInt(this.version, 10) > 27

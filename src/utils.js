@@ -34,8 +34,8 @@ export const browserInfo = {
   device: ["Mobile", "Tablet"]
 };
 
-// browser dect
-export const browserDect = {
+// browser detect
+export const browserDetector = {
   Trident: ua.indexOf("Trident") > -1 || ua.indexOf("NET CLR") > -1,
   Presto: ua.indexOf("Presto") > -1,
   WebKit: ua.indexOf("AppleWebKit") > -1,
@@ -94,8 +94,8 @@ export const browserDect = {
     ua.indexOf("Nexus 7") > -1
 };
 
-// platform dect
-export const platformDect = {
+// platform detect
+export const platformDetector = {
   Windows: function() {
     var t = ua.replace(/^.*Windows NT ([\d.]+);.*$/, "$1");
     return (

@@ -1,16 +1,17 @@
 {
-  "name": "tiny-dector",
-  "version": "0.0.32",
+  "name": "tiny-detector",
+  "version": "0.0.4",
   "description": "a tiny browser detector",
   "main": "./src/index.js",
   "scripts": {
     "dev": "webpack-dev-server",
+    "build": "webpack -d -p",
     "test": "npm run test"
   },
   "keywords": [
     "browser-detector"
   ],
-  "author": "h5-sina-blog",
+  "author": "vicvinc",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",

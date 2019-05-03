@@ -1,20 +1,20 @@
+const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
 
 module.exports = {
   mode: "development",
   entry: "./test/index.js",
 
   output: {
-    path: path.resolve("./dist", __dirname),
+    path: path.join(__dirname, "./dist"),
     filename: "[name].bundle.js",
     publicPath: "/",
     libraryTarget: "umd"
   },
 
   resolve: {
-    modules: ["node_modules", path.resolve("./src", __dirname)],
+    modules: ["node_modules", path.join(__dirname, "./src")],
     extensions: [".js", ".ts"]
   },
 
@@ -31,7 +31,7 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: path.join("./dist", __dirname),
+    contentBase: path.join(__dirname, "./dist"),
     compress: true,
     port: 3004,
     historyApiFallback: true,
@@ -44,7 +44,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      tempalte: path.join("./public/index.ejs", __dirname)
+      inject: true,
+      template: path.join(__dirname, "./public/index.ejs")
     }),
     new webpack.HotModuleReplacementPlugin()
   ]

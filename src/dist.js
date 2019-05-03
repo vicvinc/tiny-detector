@@ -1,4 +1,4 @@
-function MakeDector() {
+function MakeDetector() {
   const t = {};
 
   const e = window.navigator.userAgent;
@@ -251,6 +251,6 @@ function MakeDector() {
   return t;
 }
 
-const dector = MakeDector();
+const detector = MakeDetector();
 
-export default dector;
+export default detector;
