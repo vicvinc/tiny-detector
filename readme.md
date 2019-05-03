@@ -1,9 +1,9 @@
 # simple and tiny browser detector
 
 ```javascript
-import Dector from "tiny-dector";
+import Detector from "tiny-dector";
 
-const d = new Dector();
+const d = new Detector();
 
 console.log(d);
 ```
@@ -35,5 +35,3 @@ Mobile:
   "version": "11.0"
 }
 ```
-
-ps: dector is short for detector.. its confused but, next time will be change

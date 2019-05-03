@@ -1,6 +1,6 @@
 {
   "name": "tiny-detector",
-  "version": "0.0.4",
+  "version": "0.0.41",
   "description": "a tiny browser detector",
   "main": "./src/index.js",
   "scripts": {
